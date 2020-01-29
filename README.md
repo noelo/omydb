@@ -19,3 +19,8 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Warnings on deprecated API resources
 * Check consistency of resources e.g. using an non-default SA, where is the SA definition
 * Ensuring that base images are used and up to date
+
+
+https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
+
+
