@@ -3,7 +3,7 @@
 OpenShift resource linter - enforce consistency on k8s/OCP resources
 
 * Are health check and readiness probes declared
-* Validate counts and timeouts for probes - Ensure liveness & readiness probes are not too short
+* Validate counts and timeouts for probes - Ensure liveness & readiness probes times/timeouts are not too short
 * Deployment replica count is > 1
 * Are the two health checks pointing to the same endpoint (antipattern)
 * Are there limits assigned to the pods (memory, cpu, others), are those limits too large ?
