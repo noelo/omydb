@@ -31,7 +31,9 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 
 https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
 
-https://blog.colinbreck.com/kubernetes-liveness-and-readiness-probes-how-to-avoid-shooting-yourself-in-the-foot/#shootingyourselfinthefootwithreadinessprobes
+https://blog.colinbreck.com/kubernetes-liveness-and-readiness-probes-how-to-avoid-shooting-yourself-in-the-foot/
+
+https://github.com/instrumenta/conftest
 
 https://learnk8s.io/production-best-practices
 
