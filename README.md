@@ -6,7 +6,7 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Validate counts and timeouts for probes - Ensure liveness & readiness probes are not too short
 * Deployment replica count is > 1
 * Are the two health checks pointing to the same endpoint (antipattern)
-* Are there limits assigned to the pods (memory, cpu, others)
+* Are there limits assigned to the pods (memory, cpu, others), are those limits too large ?
 * Are there prescriptive labels assigned
 * Is the service account defined ?
 * Is there annotations for driving prometheus metrics scraping
@@ -25,6 +25,7 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Are there pod disruption budgets used
 * Service selectors match pod labels
 * Check that default SA secrets are not being mounted or if so that there is a label/annotation
+* Warning on pulling images directly rather than using image streams
 
 
 
