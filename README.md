@@ -3,6 +3,8 @@
 OpenShift resource linter - enforce consistency on k8s/OCP resources
 
 * Are health check and readiness probes declared
+* Validate counts and timeouts for probes - Ensure liveness & readiness probes are not too short
+* Deployment replica count is > 1
 * Are the two health checks pointing to the same endpoint (antipattern)
 * Are there limits assigned to the pods (memory, cpu, others)
 * Are there prescriptive labels assigned
@@ -10,6 +12,7 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Is there annotations for driving prometheus metrics scraping
 * Is the java XMS XMX settings greater than the pod limits
 * Are secrets in a consistent place on the pod FS
+* Warn if are secrets mounted as environment variables.
 * Are services exposed on consistent ports
 * Volumes not defined or defined and not mounted
 * Warnings on pulling latest image
@@ -20,8 +23,15 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Check consistency of resources e.g. using an non-default SA, where is the SA definition
 * Ensuring that base images are used and up to date
 * Are there pod disruption budgets used
+* Service selectors match pod labels
+* Check that default SA secrets are not being mounted or if so that there is a label/annotation
+
 
 
 https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
+
+https://blog.colinbreck.com/kubernetes-liveness-and-readiness-probes-how-to-avoid-shooting-yourself-in-the-foot/#shootingyourselfinthefootwithreadinessprobes
+
+https://learnk8s.io/production-best-practices
 
 
