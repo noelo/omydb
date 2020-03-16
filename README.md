@@ -2,6 +2,9 @@
 
 OpenShift resource linter - enforce consistency on k8s/OCP resources
 
+Intended to be used as part of a CI/CD pipeline to ensure resource consistency. 
+Jenkins and Tekton need to be supported
+
 * Are health check and readiness probes declared
 * Validate counts and timeouts for probes - Ensure liveness & readiness probes times/timeouts are not too short
 * Deployment replica count is > 1
@@ -26,6 +29,13 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 * Service selectors match pod labels
 * Check that default SA secrets are not being mounted or if so that there is a label/annotation
 * Warning on pulling images directly rather than using image streams
+
+* More to be added
+
+Potentially resource annotation can be added to enable tests to be skipped (TBD).
+
+Definition of rules can be retrived from an endpoint e.g. http, file etc
+
 
 
 
