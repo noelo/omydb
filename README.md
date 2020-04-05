@@ -18,7 +18,7 @@ Jenkins and Tekton need to be supported
 * Warn if are secrets mounted as environment variables.
 * Are services exposed on consistent ports
 * Volumes not defined or defined and not mounted
-* Warnings on pulling latest image
+* Warnings on pulling image with latest tag
 * Warnings on route name definitions e.g. DNS subdomains etc
 * Pull images and report on image sizes, set maximum allowed
 * Warnings on OCP/K8s api versions being used
@@ -29,6 +29,10 @@ Jenkins and Tekton need to be supported
 * Service selectors match pod labels
 * Check that default SA secrets are not being mounted or if so that there is a label/annotation
 * Warning on pulling images directly rather than using image streams
+* Warning on using DeploymentConfigs rather than Deployments if no hooks configured
+* Generic warning on using OCP resources over K8s resources if not required
+* Generic warning if custom SA is defined but not used in DC/Deployment
+* Warning if PVC defined but not used
 
 * More to be added
 
