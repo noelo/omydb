@@ -33,6 +33,7 @@ Jenkins and Tekton need to be supported
 * Generic warning on using OCP resources over K8s resources if not required
 * Generic warning if custom SA is defined but not used in DC/Deployment
 * Warning if PVC defined but not used
+* Warning is resource request and limits are inverted
 
 * More to be added
 
