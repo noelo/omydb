@@ -34,6 +34,7 @@ Jenkins and Tekton need to be supported
 * Generic warning if custom SA is defined but not used in DC/Deployment
 * Warning if PVC defined but not used
 * Warning is resource request and limits are inverted
+* Using local storage volumes as this will impact workload placement
 
 * More to be added
 
