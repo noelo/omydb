@@ -7,7 +7,7 @@ Jenkins and Tekton need to be supported
 
 * Are health check and readiness probes declared
 * Validate counts and timeouts for probes - Ensure liveness & readiness probes times/timeouts are not too short
-* Deployment replica count is > 1
+* Deployment replica count is < 1
 * Are the two health checks pointing to the same endpoint (antipattern)
 * Are there limits assigned to the pods (memory, cpu, others), are those limits too large ?
 * Are there prescriptive labels assigned
@@ -34,13 +34,14 @@ Jenkins and Tekton need to be supported
 * Generic warning if custom SA is defined but not used in DC/Deployment
 * Warning if PVC defined but not used
 * Warning is resource request and limits are inverted
-* Using local storage volumes as this will impact workload placement
-
+* Warning using local storage volumes as this will impact workload placement
+* Warning using host networks
 * More to be added
 
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 
 Definition of rules can be retrived from an endpoint e.g. http, file etc
+
 
 
 
