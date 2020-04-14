@@ -1,4 +1,4 @@
-# resourcegate
+# OMYDB
 
 OpenShift resource linter - enforce consistency on k8s/OCP resources
 
