@@ -37,6 +37,8 @@ Jenkins and Tekton need to be supported
 * Warning using local storage volumes as this will impact workload placement
 * Warning using host networks
 * More to be added
+* K8s recommended labels https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+
 
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 
