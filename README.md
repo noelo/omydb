@@ -5,6 +5,7 @@ OpenShift resource linter - enforce consistency on k8s/OCP resources
 Intended to be used as part of a CI/CD pipeline to ensure resource consistency. 
 Jenkins and Tekton need to be supported
 
+## Policies
 * Are health check and readiness probes declared
 * Validate counts and timeouts for probes - Ensure liveness & readiness probes times/timeouts are not too short
 * Deployment replica count is < 1
@@ -39,21 +40,12 @@ Jenkins and Tekton need to be supported
 * More to be added
 * K8s recommended labels https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
 
-
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 
 Definition of rules can be retrived from an endpoint e.g. http, file etc
 
-
-
-
-
-https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
-
-https://blog.colinbreck.com/kubernetes-liveness-and-readiness-probes-how-to-avoid-shooting-yourself-in-the-foot/
-
-https://github.com/instrumenta/conftest
-
-https://learnk8s.io/production-best-practices
-
-
+## Blogs / Reading Material
+- https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
+- https://blog.colinbreck.com/kubernetes-liveness-and-readiness-probes-how-to-avoid-shooting-yourself-in-the-foot/
+- https://github.com/instrumenta/conftest
+- https://learnk8s.io/production-best-practices
