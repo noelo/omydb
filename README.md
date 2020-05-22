@@ -50,6 +50,7 @@ The below policies require checking more than 1 property or doing a comparison o
 
 More to be added...
 
+### Expectations...
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 
 Definition of rules can be retrived from an endpoint e.g. http, file etc
