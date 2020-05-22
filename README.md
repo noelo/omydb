@@ -41,6 +41,7 @@ Jenkins and Tekton need to be supported
 
 [0] https://www.reddit.com/r/kubernetes/comments/all1vg/on_kubernetes_cpu_limits/
 
+### Expectations...
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 Definition of rules can be retrived from an endpoint e.g. http, file etc
 Skopeo can be used to inspect images and perform checks on that information
