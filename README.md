@@ -1,4 +1,4 @@
-# OMYDB
+# OMYDB - "Over My Dead Body" is this going into production looking like that.
 
 OpenShift resource linter - enforce consistency on k8s/OCP resources
 
