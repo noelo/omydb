@@ -13,7 +13,7 @@ The below policies only require checking 1 property, so should be quite simple.
 * Are liveness and readiness probes declared
 * Are the two probe endpoints pointing to the same endpoint (antipattern)
 * Validate counts and timeouts for probes - Ensure liveness & readiness probes times/timeouts are not too short
-* Deployment replica count is < 1
+* Deployment replica count is <= 1
 * Are there limits assigned to the pods (memory, cpu, others), are those limits too large ? See [0]
 * Is the service account defined ?
 * Is there annotations for driving prometheus metrics scraping
@@ -23,6 +23,7 @@ The below policies only require checking 1 property, so should be quite simple.
 * Warnings on OCP/K8s api versions being used
 * Warnings on deprecated API resources
 * Warning using host networks
+* Pod Disruption Budgets not present
 
 [0] https://www.reddit.com/r/kubernetes/comments/all1vg/on_kubernetes_cpu_limits/
 
@@ -45,6 +46,7 @@ The below policies require checking more than 1 property or doing a comparison o
 * Warning if PVC defined but not used
 * Warning is resource request and limits are inverted
 * K8s recommended labels https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+* ServiceMesh definitions validation e.g. - MTLS not enabled, others ?
 
 ### High
 * Warning using local storage volumes as this will impact workload placement
