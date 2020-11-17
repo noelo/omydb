@@ -24,6 +24,7 @@ The below policies only require checking 1 property, so should be quite simple.
 * Warnings on deprecated API resources
 * Warning using host networks
 * Pod Disruption Budgets not present
+* Size of secrets/configmaps
 
 [0] https://www.reddit.com/r/kubernetes/comments/all1vg/on_kubernetes_cpu_limits/
 
@@ -47,6 +48,7 @@ The below policies require checking more than 1 property or doing a comparison o
 * Warning is resource request and limits are inverted
 * K8s recommended labels https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
 * ServiceMesh definitions validation e.g. - MTLS not enabled, others ?
+* Distinct Service account definitions and linked to Deployment/DC
 
 ### High
 * Warning using local storage volumes as this will impact workload placement
