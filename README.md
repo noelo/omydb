@@ -53,6 +53,7 @@ The below policies require checking more than 1 property or doing a comparison o
 ### High
 * Warning using local storage volumes as this will impact workload placement
 * Ensuring that base images are used and up to date
+* List of SCC capabilities that are allowed/blocked, list of SCC that the SAs can use
 
 ### Expectations...
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
