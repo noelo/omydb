@@ -25,6 +25,7 @@ The below policies only require checking 1 property, so should be quite simple.
 * Warning using host networks
 * Pod Disruption Budgets not present
 * Size of secrets/configmaps
+* Lack of metrics/prometheus, service monitor etc 
 
 [0] https://www.reddit.com/r/kubernetes/comments/all1vg/on_kubernetes_cpu_limits/
 
@@ -59,6 +60,7 @@ The below policies require checking more than 1 property or doing a comparison o
 Potentially resource annotation can be added to enable tests to be skipped (TBD).
 Definition of rules can be retrived from an endpoint e.g. http, file etc
 Skopeo can be used to inspect images and perform checks on that information
+Profiles for different setting depending on "criticality of the application" e.g. pod disruption budget
 
 ## Blogs / Reading Material
 - https://blog.openshift.com/fine-grained-policy-enforcement-in-openshift-with-open-policy-agent/
